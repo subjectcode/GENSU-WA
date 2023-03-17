@@ -13,7 +13,7 @@ const { state, saveState } = useSingleFileAuthState("./login.json");
 
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "YOUR-API-KEY",
 });
 const openai = new OpenAIApi(configuration);
 
@@ -89,7 +89,7 @@ async function connectWhatsApp() {
                 // Dapatkan Info Pesan dari Grup atau bukan
                 // Dan Pesan Menyebut Bot atau Tidak
                 const isMessageFromGroup = senderNumber.includes("@g.us");
-                const isMessageMentionBot = incomingMessages.includes("@6285773287510");
+                const isMessageMentionBot = incomingMessages.includes("@YOURNUMBER");
 
 
                 // Tampilkan Nomor Pengirim dan Isi Pesan
